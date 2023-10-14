@@ -13,6 +13,7 @@ fn main() {
 }
 
 pub fn is_isogram(value: &str) -> bool {
+    //implementation goes here!
     false
 }
 
@@ -23,5 +24,10 @@ mod isogram_tests {
     #[test]
     fn empty_string_should_not_be_an_isogram() {
         assert!(!is_isogram(""));
+    }
+
+    #[test]
+    fn a_single_character_is_an_isogram(){
+        assert!(is_isogram("a"));
     }
 }
